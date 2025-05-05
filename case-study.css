@@ -1,0 +1,143 @@
+h2 {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+}
+
+h5 {
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+    font-weight: 400;
+    margin-bottom: 0.8vh;
+}
+
+p {
+    color: rgb(87, 87, 87);
+    margin-bottom: 2vh;
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.project-info h2 {
+    margin: 2vh 0 1vh 0;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 0 100px;
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.view-project {
+    padding: 0.3rem 2rem;
+    border-radius: 12px;
+    color: rgb(0, 0, 0) !important;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.15s ease-in-out;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    text-decoration: none;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-project:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    main section {
+        gap: 1.5rem;
+    }
+
+    main section div {
+        width: 100%;
+    }
+
+    .img-container {
+        align-items: flex-start;
+    }
+
+    .img-container img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: clamp(1.4rem, 5vw, 1.8rem);
+    }
+
+    h3 {
+        font-size: clamp(1.1rem, 4vw, 1.4rem);
+    }
+
+    h4 {
+        font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+    }
+
+    .view-project {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0.75rem;
+    }
+
+    .project-info h2 {
+        margin: 1.5vh 0 0.75vh 0;
+    }
+
+    p {
+        margin-bottom: 1.5vh;
+    }
+
+    .img-container {
+        gap: 1rem;
+    }
+
+    .view-project {
+        font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+        padding: 0.5rem 1.2rem;
+    }
+}
